@@ -20,21 +20,23 @@ body{
 .instagram-wrapper{
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: space-around;
 	width: 60%;
 	height: 100vh;
 }
 
 .instagram-phone{
+	background: url("../images/smartphone-instagram.png");
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 50%;
+	height: 75%;
 }
 
-.instagram-phone img{
-	height: 50rem;	
-}
+
 
 .instagram-continue{	
 	display: flex;
@@ -121,19 +123,18 @@ body{
 
 .app-download:nth-child(1){
 	background-image: url("../images/apple-store.png");
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
 }
 
 .app-download:nth-child(2){
 	background-image: url("../images/play-store.png");
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
 }
 /* Media Queries*/
-@media(max-width: 1024px){
-	.instagram-wrapper{
-		width: 90%;
-	}
-}
 
-@media(max-width: 650px){
+@media(max-width: 767px){
 	body{
 		background-color: #ffffff;
 	}
@@ -155,4 +156,7 @@ body{
 		background-color: #fff; 
 	}
 	
+	.download{
+		justify-content: center;
+	}
 }
